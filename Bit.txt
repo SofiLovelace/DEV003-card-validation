@@ -1,0 +1,5 @@
+1.- La aplicacion que construimos tiene como proposito poder validar una tarjeta previo a realizar un pago con la	 misma a travez del portal de una tienda online.
+
+2.- Diseñamos un primer prototipo https://docs.google.com/presentation/d/1hFUtmPjhPFDvs1SlPXrYdjDJvnftFrLdqn2o2Ok2Gjc/edit?usp=sharing
+
+3.- A trabajar en el diseño y el esqueleto HTML, el lunes trabajaremos en JS

@@ -7,19 +7,25 @@
   </head>
   <body>
     <header> TecnoShop, el mercado tecnológico de America </header>
-    <main> 
+    <main class = "principal-grid"> 
       <section class = "articles">
-        Pantalla 50 pulgadas  $7,890.00 MXN
+        <article class="article">
+          Pantalla 50 pulgadas  
+        </article>
+        <article class="price">
+          $7,890.00 MXN
+        </article>
       </section>
       <section class = "msj-or-img">
         Ya casi es tuyo, solo ingresa los datos de tu tarjeta para continuar con tu compra
       </section>
-      <section class="inputs">
+      <form class="inputs">
         <p> Numero de tarjeta </p>
-        <input type="text" value="****************">
+        <input type="text" id="card" name="card" pattern="[0-9]{16}" title="número de tarjeta /">
+        <!-- 2do metodo <label>Ingrese tarjeta</label>
+        <input id="texto" type="number" maxlength="16" required/> -->
         <button> Confirmar </button>
-
-      </section>
+      </form>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>

@@ -1,0 +1,41 @@
+header {
+    color: rgb(11, 11, 214);
+ display: flex;
+ justify-content: center;
+}
+
+
+/*grillas*/
+.principal-grid {
+color: blueviolet;
+display: grid;
+grid-template-columns: repeat(4, 09em);
+justify-content: center;
+}
+
+.articles {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.article {
+    grid-column: 1/2;
+}
+
+.price {
+    grid-column: 2/3;
+}
+
+.msj-or-img {
+    grid-row: 2/3;
+    grid-column: 1/5;
+}
+
+.inputs {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    display: grid;
+    
+}
