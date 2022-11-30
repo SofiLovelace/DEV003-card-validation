@@ -3,3 +3,19 @@
 2.- Diseñamos un primer prototipo https://docs.google.com/presentation/d/1hFUtmPjhPFDvs1SlPXrYdjDJvnftFrLdqn2o2Ok2Gjc/edit?usp=sharing
 
 3.- A trabajar en el diseño y el esqueleto HTML, el lunes trabajaremos en JS
+
+4.-Lunes empezamos a trabajar con las grillas en CSS dividimos y separamos el contenido
+Tenemos las primeras grillas y logramos establecer los metodos dentro del objeto.
+
+
+Siguientes pasos:
+Tenemos que establecer las funciones dentro de cada objeto
+
+Empezamos con el enmascaramiento. Tenemos que:
+-Comprobar si un carácter es valido
+
+-Si no es valido no hay acción
+-Si es valido lo almacenamos dentro de una variable interna, en esta variable se concatenan todos los valores introducidos.
+-Cada que se introduce un caracter valido, lo enmascaro y actualizo el campo de texto para mostrar la mascara
+
+recursos git https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
