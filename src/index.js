@@ -2,6 +2,8 @@ import validator from './validator.js';
 
 console.log(validator.maskify);
 
+console.log(validator.isValid("5579100288426081"));
+
 const input = document.getElementById ("card");  // creamos una constante que almacene al objeto con id="card"
 
 const numbersValid = "0123456789"
@@ -30,17 +32,19 @@ input.addEventListener("keydown", function(event) { // usamos sobre input una es
             alert("Solo se permiten 16 digitos como maximo");
             console.log(numbersConcataned); //imprimos de nuevo por que la linea 24 al estar antes se imprime antes de este recorte
         } else {
-            let mascara = numbersConcataned.slice(0,-4);
-            let visibility = numbersConcataned.slice(numbersConcataned.length - 4, numbersConcataned.length + 1);
-        
+            let mascara = numbersConcataned.slice(0,-4);  //variable para almacenar los valores a enmascarar
+            let visibility = numbersConcataned.slice(numbersConcataned.length - 4, numbersConcataned.length + 1); // variable para almacenar los numeros que dejaremos visibles
             console.log(mascara);
             console.log(visibility);
-            let remplazados = ""
-            for (let i = 1; i <= mascara.length; i ++) {
+            let remplazados = ""//variable en donde remplazaremos los numeros por *
+            for (let i = 1; i <= mascara.length; i ++) { //ciclo for para crear el string con puros * de acuerdo al length de mascara
                 remplazados = remplazados + "*"
             }
         console.log(remplazados);
-        input.value = remplazados + visibility;
+        input.value = remplazados + visibility;//ingresamos en el imput la mascara y los numeros visibles
         }
     }
     })
+
+
+
