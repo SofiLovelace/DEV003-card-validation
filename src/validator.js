@@ -1,6 +1,7 @@
 const validator = {
   isValid:function(objectListener, numberCard){
-    objectListener.addEventListener("click", function(){
+    objectListener.addEventListener("click", function(event){
+      event.preventDefault();
     //Crear una variable para almacenar el resultado "result"
       let result = 0;
       // // Crear una variable que almacene strings llamada resultLuhn = ""
