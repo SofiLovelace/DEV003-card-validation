@@ -2,20 +2,32 @@ import validator from './validator.js';
 let numbersConcataned = ""
 
 const button = document.getElementById ("button");  //creamos una variable que almacene al objeto button
-button.addEventListener("click", function(event){  //escuchamos los eventos click sobre el botton
+
+button.addEventListener("click", function(event){  
+  //escuchamos los eventos click sobre el botton
   event.preventDefault(); //evitamos la acción por defecto
-  if (numbersConcataned.length === 16) {    //condicionamos la ejecución de is valid a 16 caracteres en el input
+  const month = document.getElementById ("expirationMonth").value;
+  const year =  document.getElementById ("expirationYear").value;
+  const cvv = document.getElementById ("cvv").value;
+  const totalLength = month.length + year.length + cvv.length;
+  console.log(totalLength);
+  if (totalLength === 7) {
+    if (numbersConcataned.length === 16) {    //condicionamos la ejecución de is valid a 16 caracteres en el input
     
-    if (validator.isValid(numbersConcataned) === true){
-      alert ("Tu tarjeta es valida tu compra se esta procesando");
+      if (validator.isValid(numbersConcataned) === true){
+        alert ("Tu tarjeta es valida tu compra se esta procesando");
+      }
+      else {
+        alert ("Ingresa una tarjeta valida para continuar");
+      }
+      
     }
     else {
-      alert ("Ingresa una tarjeta valida para continuar");
-    }
-    
+      alert ("Ingresa los 16 digitos de tu plastico");    //si la condicion no se cumple
+    } 
   }
   else {
-    alert ("Ingresa los 16 digitos de tu plastico");    //si la condicion no se cumple
+    alert ("Ingresa todos los datos");
   }
 })
 
