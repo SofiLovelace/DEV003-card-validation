@@ -10,7 +10,6 @@ button.addEventListener("click", function(event){
   const year =  document.getElementById ("expirationYear").value;
   const cvv = document.getElementById ("cvv").value;
   const totalLength = month.length + year.length + cvv.length;
-  console.log(totalLength);
   if (totalLength === 7) {
     if (numbersConcataned.length === 16) {    //condicionamos la ejecución de is valid a 16 caracteres en el input
     
