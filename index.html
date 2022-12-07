@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:ital,wght@0,400;0,500;0,700;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header> TecnoShop </header>
+    <main class = "principal-grid"> 
+      <section class = "msj-or-img">
+        Ingresa los datos de tu tarjeta para completar tu compra
+      </section>
+      <form class="inputs">
+        <input type="text" value="" id="card" inputmode="numeric" placeholder="Numero de tarjeta"/>
+        <input type="text" value="" id="headline" placeholder="Nombre completo" />
+        <div>
+          <input type="text" value="" id="expirationMonth" inputmode="numeric" placeholder="MM"/>
+          <input type="text" value="" id="expirationYear" inputmode="numeric" placeholder="YY"/>
+          <input type="text" value="" id="cvv" title="numero de verificacion" inputmode="numeric" placeholder="CVV"/>
+        </div>
+        <button id="button"> Confirmar </button>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

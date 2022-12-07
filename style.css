@@ -1,0 +1,50 @@
+body {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/17/49/48/1000_F_117494886_XBa5bGMvuHkoCRO5i1l6M6KbSSFbmzUA.jpg");
+}
+
+
+header {
+ color: rgb(250, 111, 238);
+ font-family: 'Permanent Marker', cursive;
+ font-size:700%;
+ display: flex;
+ justify-content: center;
+ margin-top: 4%;
+ margin-bottom: 1em;
+}
+
+
+/*grillas*/
+.principal-grid {
+color: blueviolet;
+display: grid;
+grid-template-columns: repeat(4, 09em);
+justify-content: center;
+}
+
+.articles {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.article {
+    grid-column: 1/2;
+}
+
+.price {
+    grid-column: 2/3;
+}
+
+.msj-or-img {
+    grid-row: 2/3;
+    grid-column: 1/5;
+}
+
+.inputs {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    display: grid;
+    
+}
