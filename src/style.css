@@ -1,7 +1,16 @@
+body {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/17/49/48/1000_F_117494886_XBa5bGMvuHkoCRO5i1l6M6KbSSFbmzUA.jpg");
+}
+
+
 header {
-    color: rgb(11, 11, 214);
+ color: rgb(250, 111, 238);
+ font-family: 'Permanent Marker', cursive;
+ font-size:700%;
  display: flex;
  justify-content: center;
+ margin-top: 4%;
+ margin-bottom: 1em;
 }
 
 

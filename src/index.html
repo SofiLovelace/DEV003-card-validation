@@ -4,24 +4,22 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:ital,wght@0,400;0,500;0,700;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header> TecnoShop, el mercado tecnológico de America </header>
+    <header> TecnoShop </header>
     <main class = "principal-grid"> 
-      <section class = "articles">
-        <article class="article">
-          Pantalla 50 pulgadas  
-        </article>
-        <article class="price">
-          $7,890.00 MXN
-        </article>
-      </section>
       <section class = "msj-or-img">
-        Ya casi es tuyo, solo ingresa los datos de tu tarjeta para continuar con tu compra
+        Ingresa los datos de tu tarjeta para completar tu compra
       </section>
       <form class="inputs">
-        <p> Numero de tarjeta </p>
-        <input type="text" value="" id="card" name="card" title="número de tarjeta"/>
+        <input type="text" value="" id="card" inputmode="numeric" placeholder="Numero de tarjeta"/>
+        <input type="text" value="" id="headline" placeholder="Nombre completo" />
+        <div>
+          <input type="text" value="" id="expirationMonth" inputmode="numeric" placeholder="MM"/>
+          <input type="text" value="" id="expirationYear" inputmode="numeric" placeholder="YY"/>
+          <input type="text" value="" id="cvv" title="numero de verificacion" inputmode="numeric" placeholder="CVV"/>
+        </div>
         <button id="button"> Confirmar </button>
       </form>
     </main>
