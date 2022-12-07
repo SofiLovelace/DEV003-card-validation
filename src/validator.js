@@ -4,7 +4,6 @@ const validator = {
     let resultLuhn = "";  //Creamos una variable que almacene los valores para resolver el algoritmo de luhn
     let resultMulti = ""; // // Crear una variable llamada resultMulti
     for (let i=0; i < Number(numberCard.length); i ++) {
-    
       if (i % 2 === 0){
         resultMulti = Number(numberCard.substring(i, i + 1)) * 2;
       } else {
