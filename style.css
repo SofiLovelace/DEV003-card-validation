@@ -13,6 +13,12 @@ header {
  margin-bottom: 1em;
 }
 
+.msj-or-img {
+    color: rgb(198, 241, 79);
+    font-size:large;
+    font-weight: 700;
+}
+
 
 /*grillas*/
 .principal-grid {
