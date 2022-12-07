@@ -5,7 +5,7 @@
 3.- A trabajar en el diseño y el esqueleto HTML, el lunes trabajaremos en JS
 
 4.-Lunes empezamos a trabajar con las grillas en CSS dividimos y separamos el contenido
-Tenemos las primeras grillas y logramos establecer los metodos dentro del objeto.
+Tenemos las primeras grillas y logramos establecer los metodos dentro del objeto (nos llevo toda la semana esta parte).
 
 
 Siguientes pasos:
@@ -19,3 +19,5 @@ Empezamos con el enmascaramiento. Tenemos que:
 -Cada que se introduce un caracter valido, lo enmascaro y actualizo el campo de texto para mostrar la mascara
 
 recursos git https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
+
+ npx gh-pages -d src
