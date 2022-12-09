@@ -3,11 +3,11 @@ const validator = {
     let result = 0;     //Creamos una variable numerica para almacenar el resultado "result"
     let resultLuhn = "";  //Creamos una variable que almacene los valores para resolver el algoritmo de luhn
     let resultMulti = ""; // // Crear una variable llamada resultMulti
-    for (let i=0; i < Number(numberCard.length); i ++) {
+    for (let i=0; i < numberCard.length; i ++) {
       if (i % 2 === 0){
-        resultMulti = Number(numberCard.substring(i, i + 1)) * 2;
+        resultMulti = numberCard.substring(i, i + 1) * 2;
       } else {
-        resultMulti = Number(numberCard.substring(i,i + 1));
+        resultMulti = numberCard.substring(i,i + 1);
       }
       if (resultMulti >= 10) { 
         resultMulti = ((resultMulti-(resultMulti % 10)) / 10) + (resultMulti % 10);
@@ -15,7 +15,7 @@ const validator = {
       resultLuhn = resultLuhn + resultMulti;
     }
     for (let i = 0; i < resultLuhn.length; i ++) {
-      result = result + Number(resultLuhn.substring(i,i + 1));
+      result = result + resultLuhn.substring(i,i + 1);
     }
     return result % 10 === 0;
   },

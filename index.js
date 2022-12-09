@@ -1,10 +1,7 @@
 import validator from './validator.js';
 let numbersConcataned = ""
-
 const button = document.getElementById ("button");  //creamos una variable que almacene al objeto button
-
 button.addEventListener("click", function(event){  
-  //escuchamos los eventos click sobre el botton
   event.preventDefault(); //evitamos la acción por defecto
   const month = document.getElementById ("expirationMonth").value;
   const year =  document.getElementById ("expirationYear").value;
