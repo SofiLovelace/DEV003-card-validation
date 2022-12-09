@@ -20,4 +20,6 @@ Empezamos con el enmascaramiento. Tenemos que:
 
 recursos git https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
 
+branch
+-u origin
  npx gh-pages -d src
